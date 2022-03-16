@@ -10,6 +10,8 @@ class Cylinder:
     def surface_area(self):
         return (2 * self.pi) * self.radius * (self.radius + self.height)
         
-c = Cylinder(2,3)
+height = int(input("Enter height value: "))
+radius = int(input("Enter radius value: "))
+c = Cylinder(height,radius)
 print(c.volume())
 print(c.surface_area())

@@ -6,12 +6,12 @@ class Cylinder:
         
     def volume(self):
         return self.pi * (self.radius **2) * self.height
-    
+
     def surface_area(self):
         return (2 * self.pi) * self.radius * (self.radius + self.height)
         
 height = int(input("Enter height value: "))
 radius = int(input("Enter radius value: "))
 c = Cylinder(height,radius)
-print(c.volume())
-print(c.surface_area())
+print("Surface area",c.volume())
+print("Surface area",c.surface_area())
